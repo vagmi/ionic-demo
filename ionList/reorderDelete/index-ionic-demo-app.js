@@ -84,8 +84,8 @@ angular.module('reorderDelete'
            '<head>',
            '  <meta charset="utf-8">',
            '  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">',
-           '  <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.8/css/ionic.css">',
-           '  <script src="http://code.ionicframework.com/1.0.0-beta.8/js/ionic.bundle.js"></script>',
+           '  <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.9/css/ionic.css">',
+           '  <script src="http://code.ionicframework.com/1.0.0-beta.9/js/ionic.bundle.js"></script>',
            '</head>',
            '<body>',
            (demo.files.html || []).map(function(file) {
