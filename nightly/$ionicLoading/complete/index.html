@@ -1,25 +1,4 @@
-<!doctype html>
-<html ng-app="complete" ng-controller="IonicDemoCtrl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-<link rel="stylesheet" href="/nightly/ionic/css/ionic.min.css">
-<script src="/nightly/ionic/js/ionic.bundle.min.js"></script>
-<script src="/nightly/pages-data.js"></script>
 
-
-
-  <script src="index.js"></script>
-
-<script src="index-ionic-demo-app.js"></script>
-</head>
-<body>
-
-
-
-<div class="demo-content-pane">
-  
-  
 <div ng-controller="LoadingCtrl">
   <ion-header-bar class="bar-positive">
     <h1 class="title">Loading Demo</h1>
@@ -34,6 +13,21 @@
         <input type="number" ng-model="loadingOptions.duration">
       </label>
       <label class="item item-input item-stacked-label">
+        <span class="input-label">Loading Delay (ms)</span>
+        <input type="number" ng-model="loadingOptions.delay">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Loading Template</span>
+        <textarea rows="3" ng-model="loadingOptions.template"></textarea>
+      </label>
+      <ion-toggle class="item item-toggle"
+                  ng-model="loadingOptions.noBackdrop">
+        Hide Backdrop?
+      </ion-toggle>
+    </div>
+  </ion-content>
+</div>
+>
         <span class="input-label">Loading Delay (ms)</span>
         <input type="number" ng-model="loadingOptions.delay">
       </label>
