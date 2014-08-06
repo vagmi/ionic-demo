@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="forever" ng-controller="IonicDemoCtrl">
+<html ng-app="simple" ng-controller="IonicDemoCtrl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -20,18 +20,26 @@
 <div class="demo-content-pane">
   
   
-<ion-header-bar>
-  <h1 class="title">Scroll Down to Load More</h1>
-</ion-header-bar>
-<ion-content ng-controller="ForeverCtrl">
-  <div class="list">
-    <div class="item" ng-repeat="item in items">
-      {{item}}
-    </div>
-  </div>
 
-  <ion-infinite-scroll on-infinite="loadMoreItems()" icon="ion-loading-c">
-  </ion-infinite-scroll>
+<ion-header-bar class="bar-positive">
+  <h1 class="title">
+    Toggle: Simple Usage
+  </h1>
+</ion-header-bar>
+<ion-content ng-controller="MainCtrl" class="padding">
+  <h4>Your pizza has {{toppings()}}!</h4>
+  <ion-toggle ng-model="pizza.pepperoni">
+    Pepperoni?
+  </ion-toggle>
+  <ion-toggle ng-model="pizza.sausage" toggle-class="toggle-energized">
+    Sausage?
+  </ion-toggle>
+  <ion-toggle ng-model="pizza.jalapenos" toggle-class="toggle-calm">
+    Jalapeno?
+  </ion-toggle>
+  <ion-toggle ng-model="pizza.anchovies" toggle-class="toggle-royal">
+    Anchovies?
+  </ion-toggle>
 </ion-content>
   
 </div>
